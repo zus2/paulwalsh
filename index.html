@@ -57,7 +57,7 @@
       letter-spacing: 0.04em;
     }
 
-    .github-link {
+    .corner-link {
       position: fixed;
       bottom: env(safe-area-inset-bottom, 0px);
       left: env(safe-area-inset-left, 0px);
@@ -68,21 +68,24 @@
       text-decoration: none;
     }
 
-    .github-link:hover,
-    .github-link:focus-visible {
+    .corner-link:hover,
+    .corner-link:focus-visible {
       text-decoration: underline;
     }
 
-    .github-link:focus-visible {
+    .corner-link:focus-visible {
       outline: 1px solid currentColor;
       outline-offset: -8px;
     }
 
+    .identity { position: fixed; top: 0; right: 0; padding: 16px; color: #888; font-size: 11px; letter-spacing: .04em; }
+    .projects-link { left: auto; right: env(safe-area-inset-right, 0px); }
     @media (min-width: 768px) {
-      .github-link {
+      .corner-link {
         padding: 24px;
       }
 
+      .identity { padding: 24px; font-size: 12px; }
       .photograph figcaption {
         padding: 24px;
         padding-top: calc(24px + env(safe-area-inset-top, 0px));
@@ -102,7 +105,7 @@
       <figcaption>Lake Pukaki 2016</figcaption>
     </figure>
   </main>
-  <a class="github-link" href="https://github.com/zus2"
-     target="_blank" rel="noopener noreferrer">zus2</a>
+  <div class="identity">Paul Walsh</div>\n  <a class="corner-link" href="https://github.com/zus2"
+     target="_blank" rel="noopener noreferrer">zus2</a>\n  <a class="corner-link projects-link" href="projects.html">projects</a>
 </body>
 </html>
